@@ -26,7 +26,7 @@ function App() {
         const savedThemeLocalStorage = localStorage.getItem('theme');
         return savedThemeLocalStorage
             ? JSON.parse(savedThemeLocalStorage)
-            : false;
+            : true;
     });
     useEffect(() => {
         localStorage.setItem('theme', JSON.stringify(mode));
