@@ -24,7 +24,7 @@ const MovieDetails: FC<{}> = ({}) => {
     const navigate = useNavigate();
     const dispatch = useDispatch<AppDispatch>();
 
-    const { loading, error, film, staff, sequelsAndPrequels } = useSelector(
+    const { error, film, staff, sequelsAndPrequels } = useSelector(
         (state: RootState) => state.currentQueryReducer,
     );
 

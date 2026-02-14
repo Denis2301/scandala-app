@@ -1,9 +1,9 @@
-import { Layout, Switch, theme } from 'antd';
+import { MoonOutlined, SunOutlined } from '@ant-design/icons';
+import { Layout, Switch } from 'antd';
 import { type FC } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.jpg';
 import { Search } from './Search';
-import { MoonOutlined, SunOutlined } from '@ant-design/icons';
 
 export const Header: FC<{
     borderRadiusLG: number;

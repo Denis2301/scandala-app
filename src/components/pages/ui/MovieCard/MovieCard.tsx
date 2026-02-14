@@ -1,8 +1,8 @@
-import { Card, Rate, Skeleton, Tag } from 'antd';
+import { Card, Rate, Tag } from 'antd';
 import type { FC } from 'react';
 import { Link } from 'react-router-dom';
-import objStyle from './MovieCard.module.css';
 import type { Film } from '../../../../type';
+import objStyle from './MovieCard.module.css';
 
 export const MovieCard: FC<{ movie: Film }> = ({ movie }) => {
     return (

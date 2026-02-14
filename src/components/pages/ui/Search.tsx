@@ -1,13 +1,13 @@
-import { AutoComplete, Input, Spin, Tag } from 'antd';
-import { useEffect, type FC, useState } from 'react';
+import { AutoComplete, Input, Spin } from 'antd';
+import { useEffect, useState, type FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useMediaQuery } from 'react-responsive';
+import { useNavigate } from 'react-router-dom';
 import {
-    searchFilms,
-    setSearchQuery,
+	searchFilms,
+	setSearchQuery,
 } from '../../../store/features/searchQuerySlice';
 import type { AppDispatch, RootState } from '../../../store/store';
-import { useNavigate } from 'react-router-dom';
 
 enum MovieType {
     FILM = 'FILM',

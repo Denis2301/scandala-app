@@ -32,7 +32,7 @@ function App() {
         localStorage.setItem('theme', JSON.stringify(mode));
     }, [mode]);
     const {
-        token: { colorBgContainer, borderRadiusLG, colorText },
+        token: { borderRadiusLG },
     } = theme.useToken();
     return (
         <ConfigProvider

@@ -77,7 +77,7 @@ const SelializedDataFormCarousel: FC<{ films: Film[] }> = ({ films }) => {
 };
 
 const Movies: FC<{}> = ({}) => {
-    const { responseFilm, responseSerials, responseCartoons, loading, error } =
+    const { responseFilm, responseSerials, responseCartoons, error } =
         useMovieQuery();
     const isMobile = useMediaQuery({ maxWidth: 660 });
     const isTablet = useMediaQuery({ maxWidth: 1170 });
