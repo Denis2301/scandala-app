@@ -1,0 +1,15 @@
+.uitools {
+    height: 310px;
+    width: 290px;
+    background-image: url('//pleer.videoplayers.club/web/img/loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ccc;
+    margin: 0 auto;
+	border-radius: '8px'
+}
+@media screen and (min-width: 767px) {
+    .uitools {
+        width: 610px;
+    }
+}

@@ -1,0 +1,17 @@
+:global(.ant-carousel .slick-dots li) {
+    display: none;
+}
+
+:global( li.slick-active button) {
+    display: none;
+}
+
+.img {
+    transition: transform 0.3s ease-in-out;
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+}
+.img:hover {
+    transform: scale(1.1);
+}
