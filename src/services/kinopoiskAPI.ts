@@ -1,6 +1,6 @@
 export const KinopoiskAPI = {
-    path: `https://kinopoiskapiunofficial.tech/api/`,
-    key: 'c4585843-769d-4465-9e59-2774a798db9f',
+    path: import.meta.env.VITE_KINOPOISK_API_URL as string,
+    key: import.meta.env.VITE_KINOPOISK_API_KEY as string,
     getFilmsTop: async (type: string, page: number) => {
         const res = await fetch(
             KinopoiskAPI.path +
